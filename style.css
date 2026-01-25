@@ -129,6 +129,10 @@ main{
 }
 
 @media (max-width: 768px){
+    main{
+    margin: 0px;
+    padding: 0 0px 0px;
+    }
     .app-container{
         padding: 24px 16px;
         margin-inline: 16px;
@@ -154,4 +158,5 @@ main{
     .progress-bar{
         height: 24px;
     }
+
 }
