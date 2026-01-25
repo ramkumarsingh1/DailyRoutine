@@ -11,7 +11,7 @@ const allQuotes = [
     'Whoa! you just completed all the goals!, time for chill'
 ]
 
-errorLabel.innerText = `Please add all ${inputFields.length}  goals before marking them completed.`
+errorLabel.innerText = `Please add ${inputFields.length} goals before completed.`
 // Get stored goals from localStorage or initialize empty object
 const allGoals = JSON.parse(localStorage.getItem('allGoals')) || {}
 
@@ -78,5 +78,6 @@ inputFields.forEach((input) => {
         localStorage.setItem('allGoals',JSON.stringify(allGoals));
     })
 })
+
 
 
