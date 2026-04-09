@@ -79,5 +79,31 @@ inputFields.forEach((input) => {
     })
 })
 
+function addrow() {
+    // 1. Select parent container
+    const parent = document.querySelector(".app-container");
+
+    // 2. Create main div
+    const goalContainer = document.createElement("div");
+    goalContainer.classList.add("goal-container");
+
+    // 3. Create checkbox div
+    const checkbox = document.createElement("div");
+    checkbox.classList.add("custom-checkbox", "check-icon");
+
+    // 4. Create input field
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Add new goal";
+    input.classList.add("goal-input");
+
+    // 5. Append checkbox + input inside container
+    goalContainer.appendChild(checkbox);
+    goalContainer.appendChild(input);
+
+    // 6. Append container to parent
+    parent.appendChild(goalContainer);
+}
+
 
 
